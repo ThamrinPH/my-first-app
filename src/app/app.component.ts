@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  activeMenu;
+  activeMenu = 'recipe';
 
   onNavigate(feature: string){
     this.activeMenu = feature
