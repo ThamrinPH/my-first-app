@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  second: number = 0;
+
+  onIncremented(timeData) {
+    this.second = timeData.time;
+  }
+
+  Stopped() {
+    this.second = 0;
+  }
 }

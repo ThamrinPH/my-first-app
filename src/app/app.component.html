@@ -15,3 +15,24 @@
     </div>
   </div>
 </div>
+
+
+  <div class="row">
+    <app-game-control
+      (Incrementing)="onIncremented($event)"
+      (onStop)="Stopped()"
+    ></app-game-control>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6">
+        <app-odd 
+          [time]="second">
+        </app-odd>
+    </div>
+    <div class="col-xs-6">
+      <app-even 
+        [time]="second">
+      </app-even>
+  </div>
+  </div>
