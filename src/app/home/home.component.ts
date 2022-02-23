@@ -17,4 +17,16 @@ export class HomeComponent implements OnInit {
     // Doing coomplex calcilation here
     this.router.navigate(['/servers']);
   }
+  
+  onLoadServer(id: number) {
+    // Doing coomplex calcilation here
+    this.router.navigate(
+      ['/servers', id, 'edit'], 
+      {
+        queryParams: {
+          allowEditing: 1
+        }, 
+        fragment: 'loading'
+      });
+  }
 }
