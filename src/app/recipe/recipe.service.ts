@@ -37,6 +37,10 @@ export class RecipeService {
     return this.recipes.slice(); // slice method give a duplicate of a new array from this service
   }
 
+  getRecipe(index: number) {
+    return this.recipes.slice()[index]
+  }
+
 
 
   constructor() { }
