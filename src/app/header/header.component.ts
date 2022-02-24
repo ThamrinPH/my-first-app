@@ -5,16 +5,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  @Output() featureSelected = new EventEmitter<string>();
-  collapsed: boolean = true;
+export class HeaderComponent {
   
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  setActiveMenu(clickEvent: string) {
-    this.featureSelected.emit(clickEvent);
-  }
 }
